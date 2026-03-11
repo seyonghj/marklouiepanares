@@ -13,7 +13,7 @@ def get_student():
         "Course": "BSIT"
 })
 @app.route('/student2')
-def get_student():
+def get_student1():
     return jsonify({
         "name": "Hiren Joy",
         "Year": 2,
