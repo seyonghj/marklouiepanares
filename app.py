@@ -125,7 +125,7 @@ def search_page():
                 "<b>Name:</b> " + data.name +
                 "<br><b>Year:</b> " + data.Year +
                 "<br><b>Course:</b> " + data.Course +
-                "<br><b>Grade:</b> " + data.Grade;
+                "<br><b>GWA:</b> " + data.Grade;
             }
 
         });
