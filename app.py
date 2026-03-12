@@ -3,12 +3,12 @@ from flask import Flask, jsonify, request, render_template_string
 app = Flask(__name__)
 
 students = [
-    {"name": "Mark Louie", "Year": 3, "Course": "BSIT"},
-    {"name": "Hiren Joy", "Year": 2, "Course": "BSN"},
-    {"name": "Jermilyn", "Year": 3, "Course": "BSIT"},
-    {"name": "Rene Rose", "Year": 3, "Course": "BSIT"},
-    {"name": "Mae Lou", "Year": 3, "Course": "BSIT"},
-    {"name": "Benjamin", "Year": 3, "Course": "BSIT"}
+    {"name": "Mark Louie", "Year": 3, "Course": "BSIT", "Grade": 92},
+    {"name": "Hiren Joy", "Year": 2, "Course": "BSN", "Grade": 88},
+    {"name": "Jermilyn", "Year": 3, "Course": "BSIT", "Grade": 90},
+    {"name": "Rene Rose", "Year": 3, "Course": "BSIT", "Grade": 91},
+    {"name": "Mae Lou", "Year": 3, "Course": "BSIT", "Grade": 89},
+    {"name": "Benjamin", "Year": 3, "Course": "BSIT", "Grade": 87}
 ]
 
 @app.route('/')
@@ -124,7 +124,8 @@ def search_page():
                 document.getElementById("result").innerHTML =
                 "<b>Name:</b> " + data.name +
                 "<br><b>Year:</b> " + data.Year +
-                "<br><b>Course:</b> " + data.Course;
+                "<br><b>Course:</b> " + data.Course +
+                "<br><b>Grade:</b> " + data.Grade;
             }
 
         });
